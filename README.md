@@ -1,8 +1,9 @@
-# 🏏 IPL Pulse Match Centre
+
+# <img width="225" height="225" alt="logo" src="https://github.com/user-attachments/assets/cf7ba653-1645-4cec-9caf-34cd6780302f" /> IPL Pulse Match Centre
 
 A real-time, interactive, and highly gamified live cricket match dashboard built for the Indian Premier League (IPL). IPL Pulse brings the broadcast experience to the web, featuring live scores via Cricbuzz integration, dynamic AI predictions, live fan reactions, and a real-time leaderboard.
 
-![IPL Pulse Match Centre](https://upload.wikimedia.org/wikipedia/en/8/84/Indian_Premier_League_Official_Logo.svg) <!-- Add a screenshot of the dashboard here before publishing! -->
+![IPL Pulse Match Centre](frontend/dashboard.png)
 
 ---
 
