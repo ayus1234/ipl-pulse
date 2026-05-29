@@ -5,12 +5,14 @@
 const isLocalhost = typeof window !== 'undefined' && 
     (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
+const isHttps = typeof window !== 'undefined' && window.location.protocol === 'https:';
+
 const API_BASE_URL = typeof window !== 'undefined' 
-    ? `http://${window.location.host}/api`
+    ? `${isHttps ? 'https' : 'http'}://${window.location.host}/api`
     : 'http://127.0.0.1:8081/api';
 
 const WS_BASE_URL = typeof window !== 'undefined' 
-    ? `ws://${window.location.host}/ws` 
+    ? `${isHttps ? 'wss' : 'ws'}://${window.location.host}/ws` 
     : 'ws://127.0.0.1:8081/ws';
 
 const Config = {
