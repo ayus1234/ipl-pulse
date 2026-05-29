@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Pulse Match Centre Live</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="IPL Pulse - Real-time ball-by-ball cricket match simulation with predictions, fan reactions, and leaderboard.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=20260529B">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <div class="brand-lockup">
+                    <img class="brand-logo" src="logo.png" alt="IPL Logo">
+                    <div>
+                        <h1 class="main-title" id="main-match-title">IPL PULSE MATCH CENTRE LIVE</h1>
+                    </div>
+                </div>
+                <div class="match-ribbon" style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+                    <div class="live-pill"><span class="dot"></span> LIVE ROOM</div>
+                    <a href="https://www.jiohotstar.com" target="_blank" rel="noopener noreferrer" class="watch-live-header-btn" title="Watch Live on JioHotstar">
+                        <span class="live-dot"></span>
+                        <i class="fas fa-tv"></i> Watch Live
+                    </a>
+                    <span>Ball-by-ball predictions</span>
+                    <span>Fan pulse</span>
+                    <span>Match analytics</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="top-stat-row">
+                    <div class="top-stat-box">
+                        <div class="label">NEED</div>
+                        <div class="value need" id="header-need-runs">50</div>
+                    </div>
+                    <div class="top-stat-box">
+                        <div class="label">BALLS</div>
+                        <div class="value balls" id="header-need-balls">36</div>
+                    </div>
+                    <div class="top-stat-box">
+                        <div class="label">FANS</div>
+                        <div class="value fans" id="header-fans-count">10</div>
+                    </div>
+                </div>
+                <div id="user-login-container"></div>
+            </div>
+        </header>
+
+        <main class="dashboard-grid">
+            <div class="col-left">
+                <div id="score-card-container"></div>
+            </div>
+
+            <div class="col-center">
+                <div id="controls-container"></div>
+                <div id="prediction-container"></div>
+                <div id="chart-container"></div>
+            </div>
+
+            <div class="col-right">
+                <div id="fan-pulse-container"></div>
+                <div id="quests-container"></div>
+                <div id="leaderboard-container"></div>
+            </div>
+        </main>
+    </div>
+
+    <div id="toast-container"></div>
+    <div id="profile-modal-container"></div>
+    <div id="chat-container" class="is-hidden"></div>
+    <div id="poll-container" class="is-hidden"></div>
+
+    <div class="ipl-bottom-accent"></div>
+
+    <script type="module" src="app.js?v=202605293"></script>
+</body>
+</html>
